@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         titleET = findViewById(R.id.titleET);
         messageET = findViewById(R.id.messageET);
+        sendBTN = findViewById(R.id.saveBTN);
     }
 
 }

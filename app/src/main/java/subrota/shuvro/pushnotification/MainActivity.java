@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private EditText titleET;
+    private EditText messageET;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

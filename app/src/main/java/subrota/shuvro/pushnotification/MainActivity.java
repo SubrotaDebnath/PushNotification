@@ -21,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
         titleET = findViewById(R.id.titleET);
         messageET = findViewById(R.id.messageET);
         sendBTN = findViewById(R.id.saveBTN);
+
+        sendBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
 }

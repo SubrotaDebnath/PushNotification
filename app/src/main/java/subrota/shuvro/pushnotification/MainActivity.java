@@ -26,7 +26,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (titleET.getText().toString() != null && !titleET.getText().toString().equals("")){
+                    if (messageET.getText().toString() != null && !messageET.getText().toString().equals("")){
 
+                    }else {
+                        messageET.setError("Title is Empty");
+                    }
+
+                }else {
+                    titleET.setError("Title is Empty");
                 }
             }
         });

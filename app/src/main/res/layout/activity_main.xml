@@ -32,5 +32,4 @@
         android:backgroundTint="@android:color/holo_orange_dark"
         android:textColor="@color/white"
         android:onClick="send"/>
-
 </LinearLayout>

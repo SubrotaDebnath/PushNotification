@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private EditText titleET;
     private EditText messageET;
+    private Button sendBTN;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,4 @@ public class MainActivity extends AppCompatActivity {
         messageET = findViewById(R.id.messageET);
     }
 
-    public void send(View view) {
-    }
 }

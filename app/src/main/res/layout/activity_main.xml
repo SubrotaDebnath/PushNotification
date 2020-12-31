@@ -32,6 +32,5 @@
         android:text="send"
         android:padding="10dp"
         android:backgroundTint="@android:color/holo_orange_dark"
-        android:textColor="@color/white"
-        android:onClick="send"/>
+        android:textColor="@color/white" />
 </LinearLayout>

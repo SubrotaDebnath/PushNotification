@@ -25,7 +25,9 @@ public class MainActivity extends AppCompatActivity {
         sendBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (titleET.getText().toString() != null && !titleET.getText().toString().equals("")){
 
+                }
             }
         });
     }

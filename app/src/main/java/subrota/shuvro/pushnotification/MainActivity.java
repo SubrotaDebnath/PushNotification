@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         titleET = findViewById(R.id.titleET);
+        messageET = findViewById(R.id.messageET);
     }
 
     public void send(View view) {

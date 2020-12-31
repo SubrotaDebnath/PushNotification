@@ -11,14 +11,17 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:padding="10dp"
         android:hint="Title"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_gravity="center"
         android:text="send"
+        android:padding="10dp"
         android:backgroundTint="@android:color/holo_orange_dark"
         android:textColor="@color/white"
         android:onClick="send"/>

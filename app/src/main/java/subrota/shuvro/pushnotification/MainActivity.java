@@ -5,6 +5,9 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
 import android.app.Notification;
+import android.app.PendingIntent;
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +32,18 @@ public class MainActivity extends AppCompatActivity {
 
         notificationManagerCompat =  NotificationManagerCompat.from(this);
 
+        //Creating intent for onclick event on notifications
+        Intent activityIntent = new Intent(this, MainActivity.class);
+        //making content intent
+        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, activityIntent, 0);
+
+        //making Broadcast intent
+        Intent broadcastIntent = new Intent(this, NotificationsReceiver.class);
+        //making action intent for on click action event
+        PendingIntent actionIntent = PendingIntent.getBroadcast(this, 0, broadcastIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        //here flag (4th arg of above line)
+
+
         firstSendBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +56,13 @@ public class MainActivity extends AppCompatActivity {
                                 .setContentText(messageET.getText())
                                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                                 .setCategory(NotificationCompat.CATEGORY_MESSAGE)
+                                .setColor(Color.GREEN)
+                                //applying content intent on click on notifications
+                                .setContentIntent(contentIntent)
+                                .setAutoCancel(true)
+                                .setOnlyAlertOnce(true)
+                                //adding on click action
+                                .addAction(R.mipmap.ic_launcher, "Press to take action", actionIntent)
                                 .build();
 
                         notificationManagerCompat.notify(1, notification);

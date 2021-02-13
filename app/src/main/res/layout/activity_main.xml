@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".MainActivity">
     <EditText
@@ -24,12 +25,22 @@
         android:padding="10dp"
         android:hint="Description"/>
     <Button
-        android:id="@+id/saveBTN"
+        android:id="@+id/sendThroughFirstChannel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="32dp"
-        android:text="send"
+        android:text="send on first channel"
+        android:padding="10dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/sendThroughSecondChannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="send on second channel"
         android:padding="10dp"
         android:backgroundTint="@android:color/holo_orange_dark"
         android:textColor="@color/white" />

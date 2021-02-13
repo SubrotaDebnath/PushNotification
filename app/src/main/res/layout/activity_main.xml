@@ -15,11 +15,13 @@
         android:textColor="@color/black"
         android:textSize="16dp"
         android:padding="10dp"
+        android:text="Title"
         android:hint="Title"/>
     <EditText
         android:id="@+id/messageET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Message"
         android:textColor="@color/black"
         android:textSize="16dp"
         android:padding="10dp"

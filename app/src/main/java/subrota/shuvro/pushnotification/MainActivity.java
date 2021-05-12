@@ -136,6 +136,8 @@ public class MainActivity extends AppCompatActivity {
                                         .setMediaSession(mediaSessionCompat.getSessionToken())
                                 )
 
+                                .setSubText("This is a sub text")
+
                                 /*//Can show maximum 7th position massage in ascending order
                                 .setStyle(new NotificationCompat.InboxStyle()
                                         .addLine("This is the first message")
